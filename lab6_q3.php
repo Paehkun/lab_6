@@ -7,11 +7,18 @@
 </head>
 <body>
     <?php
-    $width1 = 4;
-    $width2 = 2;
-    $area = $width1 * $width2; 
+
+        function calculateArea ($width1, $width2){
+            $area = $width1 * $width2; 
+            return $area;
+        }
+            $width1 = 4;
+            $width2 = 2;
+
+            $area = calculateArea($width1, $width2);
+
+            echo "The area of rectangle with a width of $width1 and $width2 is $area " 
     ?>  
-    <?php echo "The area of rectangle with a width of $width1 and $width2 is $area " ?>  
 
 </body>
 </html>
